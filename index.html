@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>עיתון משפחת סטניסלבסקי</title>
+    <style>
+        /* הגדרות כלליות */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f5f7f9; 
+            margin: 0; 
+            padding: 40px; 
+            display: flex; 
+            justify-content: center; 
+        }
+
+        /* הריבוע הראשי - עם עיגול פינות וצל */
+        .main-container { 
+            max-width: 900px; 
+            width: 100%;
+            background: white; 
+            padding: 40px; 
+            border-radius: 25px; /* עיגול פינות הריבוע */
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15); /* צל מתחת לריבוע */
+            border: 1px solid #e0e0e0;
+        }
+
+        /* שורה 1: סמל וכותרת - זה בצד הזה וזה בצד הזה */
+        .header-section { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            margin-bottom: 40px; 
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+        }
+        .symbol-box img { 
+            width: 80px; 
+            height: auto; 
+            border-radius: 10px;
+        }
+
+        /* שורה 2: תמונה וטקסט - זה בצד הזה וזה בצד הזה */
+        .content-section { 
+            display: flex; 
+            gap: ;10px; 
+            align-items: flex-start; 
+            margin-bottom: 40px;
+        }
+        .image-box { flex: 1; }
+        .text-box { flex: 1.5; }
+
+        /* עיצוב התמונה עם צל ופינות מעוגלות */
+        .styled-image { 
+            width: 30%; 
+            border-radius: 20px; /* עיגול פינות התמונה */
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* צל מתחת לתמונה */
+            transition: transform 0.3s ease;
+        }
+        .styled-image:hover { transform: scale(1.02); }
+
+        .main-text { 
+            font-size: 1.25em; 
+            line-height: 1.8; 
+            color: #444; 
+            margin: 0;
+        }
+
+        /* שורה 3: שני קישורי טקסט זה לצד זה[cite: 1] */
+        .links-section { 
+            display: flex; 
+            justify-content: space-around; 
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 15px;
+        }
+        .text-link { 
+            color: #1a3a5f; 
+            font-weight: bold; 
+            text-decoration: none; 
+            font-size: 1.1em;
+            border-bottom: 2px solid transparent;
+        }
+        .text-link:hover { border-bottom: 2px solid #1a3a5f; }
+
+        /* שורה 4: חיפוש בתחתית[cite: 1] */
+     .search-container {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.modern-search-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #1a3a5f; /* כחול כהה מקצועי */
+    color: white;
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.modern-search-btn:hover {
+    background-color: #244a76;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+/* עיצוב אייקון ה-SVG */
+.search-svg {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+
+        <!-- 1. <סמל+קישור> ו-2. <כותרת>[cite: 1] -->
+        <header class="header-section">
+            <div class="symbol-box">
+                <a href="index.html"><img src="logo.png" alt="סמל"></a>
+            </div>
+            <h1 style="margin: 0; color: #1a3a5f;">מידע על עיתון המשפחה</h1>
+        </header>
+
+        <!-- 2. <תמונה + קישור המפנה ל-PDF> -->
+<div class="image-box">
+    <!-- החלף את your-file.pdf בשם הקובץ שיש לך בתיקייה -->
+    <a href="your-file.pdf" target="_blank">
+        <img src="pic.jpg" alt="לחץ לצפייה ב-PDF" class="styled-image">
+    </a>
+</div>
+            <div class="text-box">
+                <p class="main-text">
+                    כאן מופיע הטקסט שמתאר את העיתון. הכל מסודר בדיוק לפי המבנה שתכננת במצגת "עיתון.pptx", כאשר התמונה נמצאת בצד אחד והטקסט המשלים נמצא לצידה בצורה מסודרת וקריאה[cite: 1].
+                </p>
+            </div>
+        </div>
+
+        <!-- 3. <טקסט+קישור> ו-6. <טקסט +קישור>[cite: 1] -->
+        <div class="links-section">
+            <a href="page1.html" class="text-link">📖 קראו עוד על המערכת</a>
+            <a href="page2.html" class="text-link">📧 צרו קשר עם המערכת</a>
+        </div>
+
+        <!--4. <!-- שורה 4: חיפוש בתחתית - מראה מודרני -->
+<footer class="search-container">
+    <a href="search.html" class="modern-search-btn">
+        <!-- סמל זכוכית מגדלת וקטורי מודרני -->
+        <svg class="search-svg" viewBox="0 0 20 20">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="31" y1="31" x2="16.65" y2="16.65"></line>
+        </svg>
+        <span>חיפוש מהיר</span>
+    </a>
+</footer>
+
+    </div>
+
+</body>
+</html>
